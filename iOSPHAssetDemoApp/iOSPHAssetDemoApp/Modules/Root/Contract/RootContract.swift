@@ -6,18 +6,18 @@
 //  Copyright © 2020 Yuki Okudera. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import Photos
 
 // MARK: - View
 
 /// From presenter
 protocol RootView: class {
     var presenter: RootViewPresentation! { get }
-    func reloadViews()
+    func showAlert(title: String, message: String)
 }
 
 // MARK: - Presenter
-
 
 /// From view
 protocol RootViewPresentation {
@@ -28,8 +28,9 @@ protocol RootViewPresentation {
 
 /// From interactor
 protocol RootInteractorDelegate: class {
-    func fetchedImages(imageData: [Data])
-    func fetchedVideos(videoData: [Data])
+    func repliedAuthorizationStatus(status: PHAuthorizationStatus)
+    func fetchedImageURLs(imageFileURLs: [URL])
+    func fetchedVideoURLs(videoFileURLs: [URL])
 }
 
 // MARK: - Interactor

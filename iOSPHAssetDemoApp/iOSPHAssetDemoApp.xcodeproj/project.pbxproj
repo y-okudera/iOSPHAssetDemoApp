@@ -23,6 +23,7 @@
 		64E29C7323EA4D45004AEFD9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E29C7223EA4D45004AEFD9 /* RootViewController.swift */; };
 		64E29C7523EA4D4E004AEFD9 /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E29C7423EA4D4E004AEFD9 /* RootViewController.storyboard */; };
 		64E29C7723EA4E5B004AEFD9 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E29C7623EA4E5B004AEFD9 /* RootPresenter.swift */; };
+		64E29C7A23EA5A2A004AEFD9 /* String+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E29C7923EA5A2A004AEFD9 /* String+Path.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		64E29C7223EA4D45004AEFD9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		64E29C7423EA4D4E004AEFD9 /* RootViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootViewController.storyboard; sourceTree = "<group>"; };
 		64E29C7623EA4E5B004AEFD9 /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
+		64E29C7923EA5A2A004AEFD9 /* String+Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Path.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		64E29C5D23EA452D004AEFD9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				64E29C7823EA5A10004AEFD9 /* Foundation */,
 				64E29C5E23EA453A004AEFD9 /* UIKit */,
 			);
 			path = Extensions;
@@ -238,6 +241,14 @@
 				64E29C6C23EA481D004AEFD9 /* RootContract.swift */,
 			);
 			path = Contract;
+			sourceTree = "<group>";
+		};
+		64E29C7823EA5A10004AEFD9 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				64E29C7923EA5A2A004AEFD9 /* String+Path.swift */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64E29C7723EA4E5B004AEFD9 /* RootPresenter.swift in Sources */,
+				64E29C7A23EA5A2A004AEFD9 /* String+Path.swift in Sources */,
 				64E29C6023EA454A004AEFD9 /* AppDelegate+FirstView.swift in Sources */,
 				64E29C6D23EA481D004AEFD9 /* RootContract.swift in Sources */,
 				64E29C7323EA4D45004AEFD9 /* RootViewController.swift in Sources */,

@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // アプリ起動後、最初に表示する画面を定義
+        firstView(viewController: RootRouter.assembleModules(), includeNavigationController: true)
         return true
     }
 }
